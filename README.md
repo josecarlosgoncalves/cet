@@ -1,1 +1,1 @@
-## Formaçao CET - Técnoco Especialista em Tecnologias e Programação
+## Formaçao CET - Técnico Especialista em Tecnologias e Programação
