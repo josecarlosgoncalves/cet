@@ -7,13 +7,16 @@
 # Licença: MIT
 # GitHub:
 #   
- 
-print ("Somar dos numeros")
+print ("inicio do programa")
+print ("Media de dois numeros")
 print ("------------------")
-a = int(input("Digite o primeiro numero: "))    
-b = int(input("Digite o segundo numero: "))    
-soma = a + b 
-print ("A soma dos numeros é: ", soma) 
+print ("Digite dois numeros para calcular a media")
+a = float(input("Digite o primeiro numero: "))    
+b = float(input("Digite o segundo numero: "))   
+print ("calcular valor")
+media = (a + b) / 2 
+print ("imprimr resultado")
+print ("A soma dos numeros é: ", media) 
 print ("Fim do programa")
 
 
