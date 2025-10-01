@@ -2,7 +2,7 @@
 
 ## UCs
 
-01. UC00597 - Comunicar em Língua portuguesa no setor informática
+01. UC00597 - Comunicar em língua portuguesa no setor informática
 02. UC00598 - Efetuar operações e cálculos matemáticos aplicados a projetos da área informática
 03. UC00599 - Interagir em inglês nas atividades do setor da informática
 04. UC00245 - Desenvolver algoritomos
@@ -28,6 +28,6 @@
 24. UC00623 - Programar com sistemas de intelegência artificial
 25. UC00625 - Instalar e configurar um sistema de gestão de conteúdos com base de dados
 
-##
+## Conteúdo
 
 
