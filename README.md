@@ -1,6 +1,7 @@
 # Formaçao CET - Técnico Especialista em Tecnologias e Programação de Sistemas de Informação
 
 ## UCs
+
 01. UC00597 - Comunicar em Língua portuguesa no setor informática
 02. UC00598 - Efetuar operações e cálculos matemáticos aplicados a projetos da área informática
 03. UC00599 - Interagir em inglês nas atividades do setor da informática
