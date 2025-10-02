@@ -1,3 +1,5 @@
+
+
 # Formaçao CET - Técnico Especialista em Tecnologias e Programação de Sistemas de Informação
 
 ## UCs
@@ -6,6 +8,8 @@
 02. UC00598 - Efetuar operações e cálculos matemáticos aplicados a projetos da área informática
 03. UC00599 - Interagir em inglês nas atividades do setor da informática
 04. UC00245 - Desenvolver algoritomos
+    # Fluxograma do exercicios
+    ![Fluxograma](./fluxograma_email.svg)
 05. UC00600 - Analizar as funções e estruturas da organização
 06. UC00601 - Analizar e planear sistemas de infomação
 07. UC00602 - Modelar base de dados relacionais
@@ -30,4 +34,45 @@
 
 ## Conteúdo
 
+- UC00245
 
+    - Definir o problema.
+
+    - Planear as etapas de criação do algoritmo.
+
+    - Estruturar algoritmos em pseudocódigo.
+
+    - Desenhar algoritmos em fluxograma.
+
+    - Testar e depurar algoritmos.
+
+
+- UC00597
+
+    - Descodificar textos orais e escritos de diversas tipologias e em diferentes situações de comunicação.
+
+    - Interagir com diferentes interlocutores e em diferentes situações de comunicação no âmbito da atividade profissional no setor da informática.
+
+    - Pesquisar e tratar informação especializada, verbal e não verbal, em suportes variados sobre o setor da Informática.
+
+    - Produzir textos orais e escritos coesos e coerentes de diversas matrizes discursivas
+
+- UC00602
+
+    - Definir a estrutura de uma base dados relacionais
+
+    - Representar modelos relacionais.
+
+    - Normalizar dados não normalizados.
+
+- UC00604
+
+    - Definir o problema.
+
+    - Planear as etapas de criação do algoritmo.
+
+    - Estruturar algoritmos em pseudocódigo.
+
+    - Desenhar algoritmos em fluxograma.
+
+    - Testar e depurar algoritmos.
