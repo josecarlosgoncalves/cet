@@ -1,8 +1,9 @@
-name: Export draw.io svgs 
-on: 
-push:
-  paths:
-    - '**/*.drawio'
+name: Export draw.io svgs
+
+on:
+  push:
+    paths:
+      - '**/*.drawio'
 
 jobs:
   exports:
@@ -11,25 +12,28 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
-     
 
       - name: Install draw.io Cli
         run: |
           sudo apt-get update
-          sudo apt-get install -y xvfb
-          wget https:github.com/jgraph/drawio-desktop/releases/download/v21.4.3/draw.io-x86_64-21.4.3.deb
+          sudo apt-get install -y xvfb wget
+          wget https://github.com/jgraph/drawio-desktop/releases/download/v21.4.3/draw.io-x86_64-21.4.3.deb
           sudo apt install -y ./draw.io-x86_64-21.4.3.deb
-        
-      - name: Export draw.io files to SVG
-        run: |for file in $(find . -name '*.drawio'); do
-          xvfb-run --auto-servernum --server-args='-screen 0 640x480x24' drawio --export --format svg --output "${file%.drawio}.svg" "$file";
-        done  
-        - name: Commit and push changes
+
+      - name: Export draw.io files to SVG (with embedded XML)
+        run: |
+          for file in $(find . -name '*.drawio'); do
+            xvfb-run --auto-servernum --server-args='-screen 0 640x480x24' \
+              /opt/drawio/drawio --export --format svg --embed-diagram --output "${file%.drawio}.svg" "$file"
+          done
+
+      - name: Commit and push changes
         run: |
           git config --global user.name "github-actions"
-          git config --global user.email "
+          git config --global user.email "actions@github.com"
           git add .
           git commit -m "Update exported SVGs" || echo "No changes to commit"
           git push
-    
+
+
        
