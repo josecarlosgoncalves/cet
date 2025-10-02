@@ -13,18 +13,12 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Install draw.io Cli
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y xvfb wget
-          wget https://github.com/jgraph/drawio-desktop/releases/download/v21.4.3/draw.io-x86_64-21.4.3.deb
-          sudo apt install -y ./draw.io-x86_64-21.4.3.deb
-
-      - name: Export draw.io files to SVG (with embedded XML)
+      - name: Export draw.io files to SVG (with embedded XML via Docker)
         run: |
           for file in $(find . -name '*.drawio'); do
-            xvfb-run --auto-servernum --server-args='-screen 0 640x480x24' \
-            drawio --export --format svg --embed-diagram --output "${file%.drawio}.svg" "$file"
+            docker run --rm -v $PWD:/data jgraph/drawio \
+              --export --format svg --embed-diagram \
+              --output "/data/${file%.drawio}.svg" "/data/$file"
           done
 
       - name: Commit and push changes
@@ -34,6 +28,3 @@ jobs:
           git add .
           git commit -m "Update exported SVGs" || echo "No changes to commit"
           git push
-
-
-       
