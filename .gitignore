@@ -21,4 +21,7 @@ pnpm-debug.log*
 *.sln
 *.sw?
 *.code-workspace
-coverage/   
+coverage/ 
+*.bkp
+.*.drawio.bkp
+ 
